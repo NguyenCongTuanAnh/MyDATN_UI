@@ -1,5 +1,16 @@
+import styles from '~/pages/Admin/index.module.scss';
+import classNames from 'classnames/bind';
+import Sidebar from '~/component/GlobalStyles/layouts/DefaultLayout/SideBar';
+
+const cx = classNames.bind(styles);
 function Admin() {
-    return <h2>Admin Page</h2>;
+  return (
+    <div className={cx('wrapper')}>
+      <Sidebar />
+
+      <div className={cx('content')}>content</div>
+    </div>
+  );
 }
 
 export default Admin;
